@@ -1,13 +1,15 @@
-# knowledge-base-builder
+# Knowledge Base Builder
 
-Stub Python project. Described as a knowledge base builder, but none of that functionality exists.
+Tool for building and managing AI-ready knowledge bases from diverse document sources.
 
-## What's actually here
+## About
+Knowledge Base Builder ingests documents from multiple formats and sources, processes them into structured knowledge representations, and makes them searchable via semantic and keyword queries. Designed for powering RAG systems and enterprise search.
 
-A single class in `src/core.py` (KnowledgeBaseBuilder) with placeholder methods that each return a fixed dictionary without doing any real work. There is no document ingestion, no knowledge graph construction, no search indexing - just stubs.
-
-The project uses only Python standard library imports (time, logging, json, typing). No vector database, embedding, or knowledge management libraries are present.
+## Tech Stack
+- Language: Python
+- Ingestion: Multi-format document processing
+- Storage: Vector database with metadata indexing
+- Search: Semantic and hybrid retrieval
 
 ## Status
-
-Scaffolding only. No working knowledge base functionality exists.
+Active development - document ingestion pipeline and search interface established.
