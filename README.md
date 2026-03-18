@@ -1,41 +1,13 @@
 # knowledge-base-builder
 
-**Build searchable knowledge bases from documents with AI-powered organization**
+Stub Python project. Described as a knowledge base builder, but none of that functionality exists.
 
-![Build](https://img.shields.io/badge/build-passing-brightgreen) ![License](https://img.shields.io/badge/license-proprietary-red)
+## What's actually here
 
-## Install
-```bash
-pip install -e ".[dev]"
-```
+A single class in `src/core.py` (KnowledgeBaseBuilder) with placeholder methods that each return a fixed dictionary without doing any real work. There is no document ingestion, no knowledge graph construction, no search indexing - just stubs.
 
-## Quick Start
-```python
-from src.core import KnowledgeBaseBuilder
- instance = KnowledgeBaseBuilder()
-r = instance.generate(input="test")
-```
+The project uses only Python standard library imports (time, logging, json, typing). No vector database, embedding, or knowledge management libraries are present.
 
-## CLI
-```bash
-python -m src status
-python -m src run --input "data"
-```
+## Status
 
-## API
-| Method | Description |
-|--------|-------------|
-| `generate()` | Generate |
-| `create()` | Create |
-| `validate()` | Validate |
-| `preview()` | Preview |
-| `export()` | Export |
-| `get_templates()` | Get templates |
-| `get_stats()` | Get stats |
-| `reset()` | Reset |
-
-## Test
-```bash
-pytest tests/ -v
-```
-
+Scaffolding only. No working knowledge base functionality exists.
