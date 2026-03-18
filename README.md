@@ -1,30 +1,63 @@
-# knowledge-base-builder
+# Knowledge Base Builder
 
-**Build searchable knowledge bases from documents**
+Build searchable knowledge bases from documents
 
-## Install
+## Features
+
+- Api
+Chunker
+Embedder
+Indexer
+Ingester
+Organizer
+Searcher
+
+## Tech Stack
+
+- **Language:** Python
+- **Framework:** FastAPI
+- **Key Dependencies:** pydantic,fastapi,uvicorn,anthropic,openai,numpy
+- **Containerization:** Docker + Docker Compose
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3.11+
+- Docker & Docker Compose (optional)
+
+### Installation
+
 ```bash
-pip install -e '.[dev]'
+git clone https://github.com/MukundaKatta/knowledge-base-builder.git
+cd knowledge-base-builder
+pip install -r requirements.txt
 ```
 
-## Quick Start
-```python
-from src import __version__
+### Running
+
+```bash
+uvicorn app.main:app --reload
 ```
 
-## Modules
-- **ingester**
-- **chunker**
-- **embedder**
-- **indexer**
-- **searcher**
-- **organizer**
-- **api**
+### Docker
 
-## Docker
 ```bash
-docker compose up
+docker-compose up
+```
+
+## Project Structure
+
+```
+knowledge-base-builder/
+├── src/           # Source code
+├── tests/         # Test suite
+├── Dockerfile
+├── docker-compose.yml
+├── requirements.txt
+└── README.md
 ```
 
 ## License
-(c) 2026 Officethree Technologies. All Rights Reserved.
+
+MIT
